@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			School Days
+		</title>
+		<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+		<link rel="shortcut icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAFA3PEY8MlBGQUZaVVBfeMiCeG5uePWvuZHI////////////////////////////////////////////////////2wBDAVVaWnhpeOuCguv/////////////////////////////////////////////////////////////////////////wAARCAAQABADASEAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECA//EAB4QAAIBBQADAAAAAAAAAAAAAAECEQADBCEiEhMx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANchmV+WYHx5AEyadh9t0XB+E0EZK3ZX1TO9ijES4AS8gzO6D//Z"
+		/>
+		<style>
+			html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6,
+			p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn,
+			em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b,
+			u, i, center, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table,
+			caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+			embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+			section, summary,time, mark, audio, video { margin: 0;padding: 0;border:
+			0;font-size: 100%;font: inherit;vertical-align: baseline; } /* HTML5 display-role
+			reset for older browsers */ article, aside, details, figcaption, figure,
+			footer, header, hgroup, menu, nav, section { display: block;}body {line-height:
+			1; } ol, ul {list-style: none; }blockquote, q {quotes: none;} blockquote:before,
+			blockquote:after, q:before, q:after {content: '';content: none;}table {border-collapse:
+			collapse;border-spacing: 0;} body{ font-family: 'Microsoft Yahei'; } a{color:rgb(156,
+			81, 0);text-decoration:none;} #emotion{margin:5px 0;}input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{color:transparent;}::-webkit-scrollbar-track-piece{background:#FFF;}::-webkit-scrollbar{width:3px;height:8px;}::-webkit-scrollbar-thumb{height:50px;background-color:#999;border:none;}::-webkit-scrollbar-thumb:hover{background-color:#666;}.readmore{display:none}
+		</style>
+		<script>
+			var mypic = 'data:image/gif;base64,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';
+			var xajaxurl = 'http://gentle.cdn.duapp.com/schooldays.js';
+			var ajax_list_0, ajax_list_1, xhash, host, loadlast;
+			function init_app(contents) {
+				try {
+					document.title = "School Days";
+					document.writeln(contents);
+					setTimeout('if(document.getElementById("loadlabel").innerHTML=="Loading..."){document.getElementById("loadlabel").innerHTML="Load Failed!&nbsp;<a href=\'javascript:void(0);\' onclick=\'window.location.reload()\'>Try Agin</a>"}', 30000);
+					var h = document.getElementsByTagName("head")[0];
+					var f = document.createElement("script");
+					f.type = "text/javascript";
+					f.src = xajaxurl + "?ver=SSBXYW50IFRvIEZ1Y2sgWW91ciBTaXN0ZXIh&spm=1309050420"/* + ((navigator.userAgent.toLowerCase().match(/windows/) != "windows") ? ('&targte=nwp') : (''))*/;
+					h.appendChild(f);
+					f.onload = f.onreadystatechange = function() {
+						if (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete') {
+							host = getxhost();
+							setbox();
+							document.body.innerHTML += contents;
+							//ajaxurl = xajaxurl;
+							loadlist(0);
+						}
+						f.onload = f.onreadystatechange = null;
+					}
+				} catch(e) {
+					document.getElementById("loadlabel").innerHTML = "Load Failed!&nbsp;<a href='javascript:void(0);' onclick='window.location.reload()'>Try Agin</a>";
+				}
+			}
+			function loadbox(type, text) {
+				var contents = '<div align="center" style="position: absolute;width:500px;height:200px;left:50%;top:50%;margin-left:-250px;margin-top:-125px;" ><a  title="Q@Q前往作者微博..." href="javascript:void(0);" onclick="window.open(\'http://weibo.com/1843533784\',\'_blank\')"><img src="' + mypic + '" height="100%"></a><br><br><span id="loadlabel" style="font-family: \'Microsoft Yahei\';font-size:20px;">Loading...</span>';
+				if (type) {
+					if (type == 2) {
+						document.title = "School Days";
+						setbox();
+						document.body.innerHTML += contents;
+						document.getElementById('loadlabel').innerHTML = '<div style=\'font-size:18px\'><form onsubmit=\'return false\' method=\'post\'>关键词:&nbsp;<input id=\'xsx\' value=\'' + ((getCookie('key')) ? decodeURIComponent(getCookie('key')) : ('')) + '\' width=\'100px\'/><input type=\'submit\' onclick=\'search(document.getElementById(&quot;xsx&quot;).value);\' value=\'搜索\'/>&nbsp;<a href=\'javascript:void(0);\' onclick=\'startbox(0);\'>Settings</a></form></div>'+lastone()+'<br>Host: ' + getxhost() + '&nbsp;Lists: ' + getele(ajax_list_0, 'root.m', 3).length + '&nbsp;Items: ' + getele(ajax_list_1, 'root.m', 3).length;
+						return true;
+					}
+					try {
+						document.getElementById(type).innerHTML = contents;
+						document.getElementById(type).style.background='white';
+						document.getElementById('loadlabel').innerHTML = text ? text: 'All Loaded!';
+					} catch(e) {}
+				} else {
+					init_app(contents);
+				}
+			}
+			function setbox() {
+				document.body.innerHTML = ('<div id="setx"style="z-index: 999; display: none; width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.8); background-position: initial initial; background-repeat: initial initial;"><div class="section-main"style="font-family: \'Microsoft Yahei\';width: 50%;height: 50%;padding: 0% 25%;margin: 12.5% 0%;background: rgba(36, 31, 31, 1);"><svg width="60"height="60"style="margin-top:3%;"><a id="bbx" href="javascript:void(0);"onclick="document.getElementById(\'setx\').style.display=\'none\'"><circle r="28.5"cx="30"cy="30"fill="rgba(255, 255, 255, 1)"fill-opacity="0"stroke-width="3"stroke="rgba(255, 255, 255, 1)"></circle><path fill="rgba(255, 255, 255, 1)"transform="rotate(180 28.7798 29.65)"d="m27.07182,39.32462l5.95567,-5.97537l-11.51375,0l-11.51374,0l0,-3.69902l0,-3.69901l11.38121,0c6.26014,0 11.3824,-0.18806 11.3824,-0.41671c0,-0.22925 -2.49307,-2.91813 -5.53897,-5.97602l-5.53777,-5.5585l5.11869,0l5.11867,0l7.81832,7.83249l7.81712,7.83267l-7.83264,7.81712l-7.83265,7.81771l-5.38852,0l-5.38853,0l5.95448,-5.97537l0,0z"></path></a></svg>&nbsp;<h1 style="font-family: \'Microsoft Yahei\';display: inline-block;height: 60px;margin: 0px 0px 0px 10px;font-size: 35px;line-height: 60px;color: rgba(255, 255, 255, 1);text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);">School Days</h1>&nbsp;<a style="float:right;margin-top:10px;color:white;text-decoration:none;"href="javascript:void(0);"title="Reload"onclick="window.location.reload();">x</a><div id="divLoginpanelVer"style="width:100%;margin-top:10px"></div><br/><br/><div style="overflow: auto;line-height:20px;height:55%;background:rgba(36, 31, 31, 1);font-size:14px;">汝身听吾号令，吾命与汝剑同在<br>应命运之召，若愿顺此意志、此义理的话就回应吧<br>在此起誓<br>吾愿成就世间一切之善行<br>吾愿诛尽世间一切之恶行<br>吾即手握其锁链之人<br>汝为身缠三大言灵之七天，来自于抑止之轮、天秤之守护者<br>愿与吾结成契约者，召唤企鹅&nbsp;<a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=f42667e4135061aa52e75f9ecc29ed5c11d21de109b85ba4726b70261e3e7b10"><img border="0"src="http://pub.idqqimg.com/wpa/images/group.png"alt="广州大学城同学会"title="广州大学城同学会"style="height:14px;"></a></div></div></div><iframe id="cz" src="about:blank" style="display:none;"></iframe><span id="hash">')
+			}
+			function showsetbox(str, kg, bb) {
+				try {
+					if (bb) {
+						document.getElementById('bbx').onclick = ''
+					}
+					document.getElementById('divLoginpanelVer').innerHTML = '<div style="width:100%;float:right;margin-right:0;font-family: \'Microsoft Yahei\';font-size: 25px;color: rgba(255, 255, 255, 1);text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);">' + str + '</div>';
+				} catch(e) {}
+				if (kg) {
+					document.getElementById('setx').style.display = 'block'
+				} else {
+					document.getElementById('setx').style.display = 'none'
+				}
+			}
+			function startbox(tt, ss) {
+				if (tt) {
+					setbox();
+				}
+				showsetbox('<span style="float:left;"><span style="font-size:18px">校园网服务器:</span>&nbsp;<select style="height:28px;border:0;"id="xhost"value="202.112.118.66"><option value="">自定义服务器</option><option value="210.38.111.50">广州中医药大学</option><option value="202.112.118.66">中国人民大学图书馆</option><option value="210.41.192.177">西华师范大学</option><option value="211.86.241.240">安徽财经大学</option><option value="218.195.112.49">宝鸡文理学院</option><option value="125.217.173.18">中山大学</option><option value="122.207.80.1">中南大学</option><option value="202.204.193.241">北京石油大学</option><option value="202.196.33.250">工学院</option><option value="211.71.232.58">防灾科技学院</option><option value="202.197.120.54">湖南师范大学</option><option value="211.69.32.160">河南中医学院</option><option value="202.118.166.246">东北农业大学</option><option value="218.197.87.57">湖北经济学院</option><option value="210.43.128.133">华北水利学院</option><option value="210.30.184.168">辽宁工学院</option><option value="59.76.48.222">陇东学院</option><option value="211.83.48.5">泸州医学院</option><option value="202.119.24.72">南京大学</option><option value="211.66.88.61">农工商职业技术学院</option><option value="211.64.120.72">山东交通学院</option><option value="219.224.67.151">首都经济贸易大学</option><option value="vod.wtu.edu.cn">武汉纺织大学</option><option value="219.245.18.150">西北大学</option><option value="222.22.0.3">郑州大学</option><option value="218.29.109.229">郑州大学西亚斯国际学院</option><option value="125.219.48.3">郑州经济管理干部学院</option><option value="59.70.159.20">郑州轻工业学院</option><option value="202.202.240.84">重庆交通学院</option></select><input type="button" onclick="var t;if(document.getElementById(\'xhost\').selectedIndex==0){t=prompt(\'请输入服务器地址\',getCookie(\'xhost\'));if(t){document.getElementById(\'xhost\').options[0].value=t;}else{return false;}}setCookie(\'xhost\',document.getElementById(\'xhost\').value,3600*24*365);clearStorage(0);alert(\'已经保存！\');window.location.reload();" ' + ((getPgjs() == 'wp') ? ('style=\'height:30px;\' ') : ('')) + 'value="修改"><input type="button" onclick="showsetbox(\'\', 0);" ' + ((getPgjs() == 'wp') ? ('style=\'height:30px;\' ') : ('')) + 'value="返回"></span><span style="float:right;">Welcome!</span>' + ((!ss) ? ('<div style="font-size:18px;position:fixed;right:0;top:0;color:white;background:black;"><form style="float:right;" onsubmit="return false;" method="post" >&nbsp;关键词:<input id="sxx" value="' + ((getCookie('key').length > 0) ? (decodeURIComponent(getCookie('key'))) : ('')) + '" width="100px"/><input type="submit" onclick="search(document.getElementById(\'sxx\').value);" value="搜索"/></form></div>') : ('')), 1, (tt ? 1 : 0));
+				getCookie('xhost') ? ((document.getElementById('xhost').value = getCookie('xhost')) + ((document.getElementById('xhost').selectedIndex == -1) ? ((document.getElementById('xhost').options[0].text = '自定义服务器 [' + getCookie('xhost') + ']') + (document.getElementById('xhost').options[0].value = getCookie('xhost')) + (document.getElementById('xhost').selectedIndex = 0)) : (''))) : (document.getElementById('xhost').value = '202.112.118.66')
+			}
+			function getxhost() {
+				var hv = getCookie('xhost');
+				if (hv) {
+					return hv
+				} else {
+					return '202.112.118.66'
+				}
+			}
+			function getsbz() {
+				return '<div style="margin-top:5px"><a href="javascript:void(0);" onclick="window.location.reload();">Reload</a>&nbsp;<a href="javascript:void(0);" onclick="startbox(0,1);">Settings</a></div>';
+			}
+			function loadlist(type) {
+				var lhost = getxhost();
+				document.getElementById("loadlabel").innerHTML = "Loading " + (type ? 'Item': 'Search') + " Libs..." + "&nbsp;" + getsbz();
+				if (!type) {
+					var xtmp = getStorage('list_libs');
+					if (xtmp) {
+						ajax_list_0 = xtmp;
+						loadlist(1);
+						return true;
+					}
+				} else {
+					var xtmp = getStorage('item_libs');
+					if (xtmp) {
+						ajax_list_1 = xtmp; (document.getElementById("loadlabel").innerHTML = "<div style='font-size:18px'><form onsubmit='return false' method='post'>关键词:&nbsp;<input id='xsx' value='' width='100px'/><input type='submit' onclick='search(document.getElementById(&quot;xsx&quot;).value);' value='搜索'/>&nbsp;<a href='javascript:void(0);' onclick='startbox(0);'>Settings</a></form></div>"+lastone()+"<br>Host: " + getxhost() + "&nbsp;Lists: " + getele(ajax_list_0, 'root.m', 3).length + "&nbsp;Items: " + getele(ajax_list_1, 'root.m', 3).length) + (getCookie('key') ? (search(decodeURIComponent(getCookie('key')))) : (""));
+						return true;
+					}
+				}
+				var mats = new Array();
+				var reps = new Array();
+				var target = getPgjs();
+				if (!type) {
+					mats[mats.length] = "/<h>(.*?)<\\/h>/";
+					mats[mats.length] = "/<z>(.*?)<\\/z>/";
+					mats[mats.length] = "/687474703A2F2F/";
+					/*if (target == 'wp') {
+						mats[mats.length] = "/<m><a>/";
+						mats[mats.length] = "/<\\/a><b>/";
+						mats[mats.length] = "/<\\/b><c>/";
+						mats[mats.length] = "/<\\/c><d>/";
+						mats[mats.length] = "/<\\/d><e>/";
+						mats[mats.length] = "/<\\/e><f>/";
+						mats[mats.length] = "/<\\/f><g>/";
+						mats[mats.length] = "/<\\/g><h>/";
+						mats[mats.length] = "/<\\/g><i>/";
+						mats[mats.length] = "/<\\/i><v>/";
+						mats[mats.length] = "/<\\/v><\\/m>/";
+					}*/
+					reps[reps.length] = "";
+					reps[reps.length] = "";
+					reps[reps.length] = "";
+					/*if (target == 'wp') {
+						reps[reps.length] = "♡";
+						reps[reps.length] = "♤";
+						reps[reps.length] = "⋌";
+						reps[reps.length] = "☻";
+						reps[reps.length] = "♢";
+						reps[reps.length] = "♧";
+						reps[reps.length] = "☼";
+						reps[reps.length] = "☺";
+						reps[reps.length] = "☏";
+						reps[reps.length] = "☎";
+						reps[reps.length] = "✪";
+						(ajax_list_0=ajax_list_0' + ((getPgjs() == 'wp') ? ('.replace(/\♡/ig,"<m><a>").replace(/\♤/ig,"</a><b>").replace(/\⋌/ig,"</b><c>").replace(/\☻/ig,"</c><d>").replace(/\♢/ig,"</d><e>").replace(/\♧/ig,"</e><f>").replace(/\☼/ig,"</f><g>").replace(/\☺/ig,"</g><h>").replace(/\☏/ig,"</g><i>").replace(/\☎/ig,"</i><v>").replace(/\✪/ig,"</v></m>")') : ('')) + ')+
+					}*/
+				} else {
+					mats[mats.length] = "/<c>(.*?)<\\/c>/";
+					mats[mats.length] = "/<a>687474703A2F2F/";
+					mats[mats.length] = "/\\\\/";
+					mats[mats.length] = "/:\\/kuu/";
+					/*if (target == 'wp') {
+						mats[mats.length] = "/<m><a>/";
+						mats[mats.length] = "/<\\/a><b>/";
+						mats[mats.length] = "/<\\/b><\\/m>/";
+						mats[mats.length] = "/\\.rmvb/";
+						mats[mats.length] = "/\\.mp4/";
+						mats[mats.length] = "/\\.mkv/";
+					}*/
+					reps[reps.length] = "";
+					reps[reps.length] = "<a>";
+					reps[reps.length] = "/";
+					reps[reps.length] = "";
+					/*if (target == 'wp') {
+						reps[reps.length] = "♡";
+						reps[reps.length] = "♤";
+						reps[reps.length] = "⋌";
+						reps[reps.length] = "@";
+						reps[reps.length] = "$";
+						reps[reps.length] = "%";
+						(ajax_list_1=ajax_list_1' + ((getPgjs() == 'wp') ? ('.replace(/\♡/ig,"<m><a>").replace(/\♤/ig,"</a><b>").replace(/\⋌/ig,"</b></m>").replace(/\%/ig,".mkv").replace(/\$/ig,".mp4").replace(/\@/ig,".rmvb")') : ('')) + ')+
+					}*/
+				}
+				getmatchtext('http://' + lhost + (type ? ('/bar/barmovlist.xml') : ('/bar/list/Total.xml')), mats, reps, 'ajax_list_' + type, 'try{(ajax_list_' + type + ')?(' + (type ? ('(document.getElementById("loadlabel").innerHTML="<div style=\'font-size:18px\'><form onsubmit=\'return false\' method=\'post\'>关键词:&nbsp;<input id=\'xsx\' value=\'\' width=\'100px\'/><input type=\'submit\' onclick=\'search(document.getElementById(&quot;xsx&quot;).value);\' value=\'搜索\'/>&nbsp;<a href=\'javascript:void(0);\' onclick=\'startbox(0);\'>Settings</a></form></div>"+lastone()+"<br>Host: ' + getxhost() + '&nbsp;Lists: "+getele(ajax_list_0,\'root.m\',3).length+"&nbsp;Items: "+getele(ajax_list_1,\'root.m\',3).length)+(getCookie(\'key\')?(document.getElementById(\'xsx\').value=(decodeURIComponent(getCookie(\'key\')))):(""))+setStorage(\'item_libs\',(ajax_list_1),3600*24,0)') : ('(document.getElementById("loadlabel").innerHTML="Search Libs Load!&nbsp;<a href=\'javascript:void(0);\' onclick=\'startbox(0);\'>Settings</a>")+setStorage(\'list_libs\',(ajax_list_0),3600*24,1)+loadlist(1)')) + '):(document.getElementById("loadlabel").innerHTML="Load ' + (type ? 'Item': 'Search') + ' Libs Failed!&nbsp;"+getsbz())}catch(e){document.getElementById("loadlabel").innerHTML="Load ' + (type ? 'Item': 'Search') + ' Libs Failed!&nbsp;"+getsbz();}', 'GB2312|UTF-8', 3, '', 'document.getElementById("loadlabel").innerHTML="Load ' + (type ? 'Item': 'Search') + ' Libs Failed!&nbsp;"+getsbz();');
+			}
+			function runone(str){
+			loadlast=1;search(decodeURIComponent(str));
+			
+			}
+			function lastone(){
+				var lbf = getCookie('lastbf');
+				var lbx = lbf.split('\|');
+				if (lbx[0]&&lbx[1]&&lbx[2]&&lbx[3]) {
+					return '&nbsp;<a href="javascript:void(0);" onclick="runone(\''+lbx[3]+'\');">'+lbx[2]+' 第'+lbx[0]+'集</a>';
+				}
+				return '';
+			}
+			function search(str) {
+				setbox();
+				if (str.length > 0) {
+					setCookie('key',encodeURIComponent(str),3600*24);
+					showsetbox('<span style="float:right;">正在搜索"' + str + '"...</span>', 1);
+					search_run(ajax_list_0, str);
+				} else {
+					alert('请输入关键词！');
+					delCookie('key');
+					loadbox(2);
+				}
+			}
+			function search_run(xmls, str) {
+				//var myJsonObject = xmls;
+				document.body.innerHTML += '<div id="results" style="background:grey;color:white;overflow:auto;width:100%;line-height:26px;height:26px"></div><div style="position:fixed;width:270px;right:-265px;top:0;color:white;background:black;" onmouseover="this.style.right=\'0px\';" onmouseout="this.style.right=\'-265px\';"><form onsubmit="return false;" method="post" style="float:right;">&nbsp;关键词:<input id="sx" value="' + decodeURIComponent(getCookie('key')) + '" width="100px"/><input type="submit" onclick="search(document.getElementById(\'sx\').value);" value="搜索"/></form></div>';
+				var numms = 0;
+				document.getElementById('results').innerHTML += '<span id="ssxa"><select style="width:100%" id="ssx" onchange="if(this.value){geturl(this.value);}"></select></span>';
+				document.getElementById("ssx").options.add(new Option('++++++++++下拉查看"' + str + '"搜索结果++++++++++', ''));
+				var arrlist = new Array();
+				var sss = getele(xmls, 'root.m', 3);
+				for (var i = 0; i < sss.length; i++) {
+					var ss = str.replace('687474703A2F2F', '').toLowerCase();
+					try {
+						var sxa, sxb, sxc, sxd, sxe, sxf, sxg, sxh, sxi, sxv;
+						sxa = getele(sss[i], 'a', 2);
+						if (getele(sss[i], 'a', 2)) {
+							sxb = getele(sss[i], 'b', 2);
+							sxc = getele(sss[i], 'c', 2);
+							sxd = getele(sss[i], 'd', 2);
+							sxe = getele(sss[i], 'e', 2);
+							sxf = getele(sss[i], 'f', 2);
+							sxg = getele(sss[i], 'g', 2);
+							sxi = getele(sss[i], 'i', 2);
+							sxv = getele(sss[i], 'v', 2);
+							if (sxa.length > sxa.toLowerCase().replace(ss, '').length || sxb.length > sxb.toLowerCase().replace(ss, '').length || sxc.length > sxc.length || sxd.length > sxd.toLowerCase().replace(ss, '').length || sxe.length > sxe.toLowerCase().replace(ss, '').length || sxf.length > sxf.toLowerCase().replace(ss, '').length || sxg.length > sxg.toLowerCase().replace(ss, '').length || sxi.length > sxi.toLowerCase().replace(ss, '').length || sxv.length > sxv.toLowerCase().replace(ss, '').length) {
+								arrlist[arrlist.length] = [sxa, sxb.trim()];
+								numms++
+							}
+
+						}
+					} catch(e) {
+						alert(e)
+					}
+				}
+				if (arrlist.length > 0) {
+					for (var i = 0; i < arrlist.length; i++) {
+						document.getElementById("ssx").options.add(new Option(arrlist[arrlist.length - 1 - i][0], '687474703A2F2F' + arrlist[arrlist.length - 1 - i][1]));
+					}
+				}
+				xz(numms, 1);
+				var lbf = getCookie('lastbf');
+				var lbx = lbf.split('\|');
+				if ((lbx[1])&&loadlast) {
+					geturl(lbx[1]);
+					loadlast=0;
+				}
+			}
+			function xz(numms, type) {
+				document.getElementById('cz').src = 'about:blank';
+				if (numms) {
+					document.title = '总共' + (numms) + '条结果 - School Days';
+				} else {
+					document.title = '查看搜索结果 - School Days';
+				}
+				showsetbox('<span style="float:left;width:50%">' + document.getElementById(type ? 'results': 'ssxa').innerHTML + '</span><span style="float:right;">' + (type ? ('<img src="'+mypic+'" height="26px" style="position:absolute">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总共' + (numms) + '条结果') : (document.getElementById('ssxb').innerHTML)) + '</span><div style="font-size:18px;position:fixed;right:0;top:0;color:white;background:black;"><form style="float:right;" onsubmit="return false;" method="post" >&nbsp;关键词:<input id="sxv" value="' + ((getCookie('key').length > 0) ? (decodeURIComponent(getCookie('key'))) : ('')) + '" width="100px"/><input type="submit" onclick="search(document.getElementById(\'sxv\').value);" value="搜索"/></form></div>', 1);
+				document.getElementById('results').innerHTML = '<span id="ssxb">' + (type ? ('<img src="'+mypic+'" height="26px" style="position:absolute">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总共' + (numms) + '条结果') : (document.getElementById('ssxb').innerHTML)) + '</span>:&nbsp;<span><a href="javascript:void(0);" onclick="xz(' + numms + ')">查看结果</a></a></span><span id="ssxa" style="display:none;">' + document.getElementById(type ? 'results': 'ssxa').innerHTML + '</span>&nbsp;<a href="javascript:void(0);" onclick="loadbox(2)">重新搜索</a>&nbsp;<a href="javascript:void(0);" onclick="startbox(0);">切换服务器</a>&nbsp;<a href="javascript:void(0);" onclick="delCookie(\'key\');window.location.reload()">重新加载</a>';
+				document.body.innerHTML += ('<div id="content"></div>');
+				loadbox('content', '<a href="javascript:void(0);" onclick="xz(' + numms + ')">查看结果</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="loadbox(2)">重新搜索</a>');
+			}
+			function tc(title, url) {
+				var winname = window.open('', "_blank", 'height=357,width=580,toolbar=no,menubar=no,scrollbars=no,location=no,status=no');
+				winname.document.open('text/html', 'replace');
+				winname.opener = null;
+				winname.document.write('<title>' + title + '</title><style>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}#emotion{margin:5px 0;}input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{color:transparent;}::-webkit-scrollbar-track-piece{background:#FFF;}::-webkit-scrollbar{width:3px;height:8px;}::-webkit-scrollbar-thumb{height:50px;background-color:#999;border:none;}::-webkit-scrollbar-thumb:hover{background-color:#666;}.readmore{display:none}</style><body style="background:black;"><div style="background:white;">正在播放:&nbsp;<a style="text-decoration:none;" href="' + url + '">' + title + '</a><span style="float:right;margin-right:0;"><a style="text-decoration:none;" href="javascript:void(0)" onclick="var tt=prompt(\'迅雷下载\',\'' + url + '\');if(tt){document.getElementById(\'cz\').src=(\'Thunder://' + b.encode('AA' + url) + '\')}">下载</a></span></div><iframe id="cz" style="display:none;"></iframe>' + getplayer(url) + '<script>scroll(0,document.documentElement.scrollHeight);<\/script></body>');
+				winname.document.close();
+			}
+			function check(url, title, str, ji) {
+				showsetbox('<span style="float:right;">正在查询"' + title + ' 第' + ji + '集"...</span>', 1);
+				var ms = new Array();
+				ms[0] = "get";
+				ms[1] = 0;
+				ms[2] = 0;
+				ms[3] = "http://www.baidu.com/";
+				ms[4] = 0;
+				ms[5] = "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31";
+				ms[6] = '2';
+				var xx = CrossScript(url, ms, 'ajax_ds', 'try{ajax_ds?check_run(ajax_ds,\'' + title + '\',\'' + str + '\',\'' + ji + '\',\'' + url + '\'):(alert("获取失败！"))}catch(e){alert("获取失败！");showsetbox(\'\', 0)}', '', 0)
+			}
+			function check_run(result, title, str, ji, url) {
+				if (result == '404') {
+					//showsetbox('<span style="float:right;">返回"' + title + ' 第' + ji + '集"地址遇到404</span>', 1);
+					gettrueurl(title, str, ji)
+				} else {
+					xx(title, str, ji, url, 1)
+					showsetbox('', 0);
+				}
+			}
+			function getplayer(xurl) {
+                document.getElementById('player').style.background='black';
+				var player = '<video id="vvdd" width="100%" height="100%" src="' + xurl + '" controls="controls" autoplay="autoplay"></video>';
+				if (getPgjs() == 'wp') {
+					var t0 = xurl.split('\.');
+					var t1 = t0[t0.length - 1];
+					var t2 = xurl.split('\/');
+					var t3 = t2[t2.length - 1];
+					if (t1.toLowerCase() != 'mkv') {
+						player = '<object width="300" height="300" type="video/x-ms-asf" url="' + xurl + '" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6"><param name="url" value="' + xurl + '"> <param name="filename" value="' + t3 + '"> <param name="autostart" value="1"> <param name="uiMode" value="full" /> <param name="autosize" value="1"> <param name="playcount" value="1"> <embed type="application/x-mplayer2" src="' + xurl + '" width="100%" height="100%" autostart="true" showcontrols="true" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/"></embed> </object> ';
+					}
+				}
+				return player;
+			}
+			function backp(title, ji) {
+				loadbox('player', '<a href="javascript:void(0);" onclick="document.getElementById(\'sst\').selectedIndex=' + ji + ';document.getElementById(\'sst\').onchange();">加载此集</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="xj(\'' + title + '\')">查看集数</a>');
+			}
+			function dm(ji) {
+				if (ji == -1) {
+					window.open('http://pan.baidu.com/share/home?uk=3439388072', '_blank');
+				} else {
+					return "sdv://" + b.encode("http://" + host + "/xy_path.asp|http://" + host + "/iframeplay.html|" + xhash + "|http://" + host + "/tongji.html|" + (ji - 1));
+				}
+			}
+			function mp4tm(xurl, ji) {
+				if (getPgjs() == 'wp') {
+					var t0 = xurl.split('\.');
+					var t1 = t0[t0.length - 1];
+					var t2 = xurl.split('\/');
+					var t3 = t2[t2.length - 1];
+					if (t1.toLowerCase() != 'mkv') {
+						//prompt('此格式暂时不支持网页播放,请复制以下命令行,用官方播放器播放！',dm(ji));
+						document.getElementById('cz').src = dm(ji);
+						return 'no';
+					}
+				}
+			}
+			function demp4(xurl) {
+			    var kzm=end(explode('.', xurl));
+				if(kzm=="mp4"){
+				    return "http://play.sturgeon.mopaas.com/crack.php?demp4="+b.encode(xurl);
+				}else{
+				    return xurl;
+				}
+			}
+			function xx(title, str, ji, kurl, type) {
+				if (type) {
+					var pp = '<span id="dzhq">地址获取成功！</span>&nbsp;';
+					if (kurl) {
+						var xurl = kurl
+					}
+					document.title = title + ' 第' + ji + '集 - School Days';
+					document.getElementById("player").innerHTML = '<div id="ssmmx" style="z-index: 1; display: block; width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.8);"><div class="section-main" style="font-family: \'Microsoft Yahei\';width: 80%;height: 200px;padding: 0% 10%;margin: 15% 0%;background: white;"><div style="width:100%;height:200px;"><a href="javascript:void(0);" onclick="' + ((getPgjs() == 'wp') ? ('if(mp4tm(\'' + xurl + '\',\'' + ji + '\')!=\'no\'){scroll(0, document.documentElement.scrollHeight);var ll=document.getElementById(\'list\');var rr=document.getElementById(\'player\');ll.style.width=\'0\';rr.style.width=\'100%\';document.getElementById(\'player\').innerHTML=getplayer(\'' + xurl + '\')}') : ('window.open(\'' + demp4(xurl) + '\',\'_blank\');')) + '"><div style="float: left; line-height: 12; width: 25%; height: 100%; text-align: center; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial;" onmouseover="this.style.color=\'white\';this.style.background=\'black\'" onmouseout="this.style.color=\'black\';this.style.background=\'white\'" >播放</div></a><a href="javascript:void(0);" onclick="' + ((getPgjs() != 'wp') ? ('var m=document.getElementById(\'sst\');if(' + ji + '<(m.options.length-1)){document.getElementById(\'player\').innerHTML=\'\';m.selectedIndex=m.selectedIndex+1;m.onchange();}else{alert(\'没有下一集！\');}') : ('document.getElementById(\'cz\').src=(\'Thunder://' + b.encode('AA' + xurl) + '\')')) + '"><div style="float: left; line-height: 12; width: 25%; height: 100%; text-align: center; background-color: black; color: white; background-position: initial initial; background-repeat: initial initial;" onmouseover="this.style.color=\'white\';this.style.background=\'black\'" onmouseout="this.style.color=\'black\';this.style.background=\'white\'">' + ((getPgjs() != 'wp') ? ('下集') : ('下载')) + '</div></a><a href="javascript:void(0);" onclick="xj(\'' + title + '\');"><div style="float: left; line-height: 12; width: 25%; height: 100%; text-align: center; background-color: white; color: black; background-position: initial initial; background-repeat: initial initial;" onmouseover="this.style.color=\'white\';this.style.background=\'black\'" onmouseout="this.style.color=\'black\';this.style.background=\'white\'">选集</div></a><a href="javascript:void(0);" onclick="backp(\'' + title + '\',\'' + ji + '\')"><div style="float: left; line-height: 12; width: 25%; height: 100%; text-align: center; background-color: white; color: black; background-position: initial initial; background-repeat: initial initial;" onmouseover="this.style.color=\'white\';this.style.background=\'black\'" onmouseout="this.style.color=\'black\';this.style.background=\'white\'" >返回</div></a></div></div></div>';
+					document.getElementById('sst').selectedIndex = ji;
+					document.getElementById('sst').options[0].text = '当前第' + ji + '集';
+					document.getElementById('ssb').options[0].text = '当前第' + ji + '集';
+					document.getElementById('ssb').style.width = '40%';
+					document.getElementById("path").innerHTML = '<a title="第' + ji + '集" href="javascript:void(0);" onclick="var tt=prompt(\'迅雷下载：\',\'' + demp4(xurl) + '\');if(tt){document.getElementById(\'cz\').src=(\'Thunder://' + b.encode('AA' + demp4(xurl)) + '\')}">第' + ji + '集</a>&nbsp;<span style="float:right;margin-right:0;">' + pp + '<a href="javascript:void(0)" onclick="scroll(0, document.documentElement.scrollHeight);var ll=document.getElementById(\'list\');var rr=document.getElementById(\'player\');ll.style.width=\'0\';rr.style.width=\'100%\';document.getElementById(\'player\').innerHTML=getplayer(\'' + demp4(xurl) + '\');">播放</a>&nbsp;' + ((getPgjs() != 'wp') ? ('<a href="javascript:void(0)" onclick="tc(\'' + title + '\',\'' + demp4(xurl) + '\')">弹窗</a>&nbsp;') : (((xurl.split('\.'))[xurl.split('\.').length - 1].toLowerCase() == 'mkv') ? ('<a href="javascript:void(0)" onclick="tc(\'' + title + '\',\'' + xurl + '\')">弹窗</a>&nbsp;') : (''))) + ((getPgjs() != 'wp') ? ('<a target="_blank" href="' + demp4(xurl) + '">外链</a>') : ('<a href="javascript:void(0)" onclick="alert(\'下载并安装School Days工具,就可以使用调用功能！\');dm(-1)">工具</a>&nbsp;<a href="javascript:void(0)" onclick="alert(\'调用功能要安装School Days,若没安装可按工具链接下载！\');document.getElementById(\'cz\').src=dm(\'' + ji + '\')">调用</a>&nbsp;<a href="javascript:void(0);" onclick="document.getElementById(\'cz\').src=(\'Thunder://' + b.encode('AA' + xurl) + '\')">下载</a>')) + '&nbsp;<a href="javascript:void(0);" onclick="var ll=document.getElementById(\'list\');var rr=document.getElementById(\'player\');if(ll.style.width==\'10%\'){ll.style.width=\'0\';rr.style.width=\'100%\';}else{ll.style.width=\'10%\';rr.style.width=\'90%\';}">列表</a>&nbsp;<span id="lbx"><a href="javascript:void(0);" onclick="document.getElementById(\'sst\').selectedIndex=' + ji + ';document.getElementById(\'sst\').onchange();">加载</a>&nbsp;<a href="javascript:void(0);" onclick="var m=document.getElementById(\'sst\');if(' + ji + '>1){m.selectedIndex=m.selectedIndex-1;m.onchange();}else{alert(\'没有上一集！\');}">上一集</a>&nbsp;<a href="javascript:void(0);" onclick="var m=document.getElementById(\'sst\');if(' + ji + '<(m.options.length-1)){m.selectedIndex=m.selectedIndex+1;m.onchange();}else{alert(\'没有下一集！\');}">下一集</a></span></span>';
+					setCookie('lastbf', ji + '|' + xhash + '|' + title + '|' + getCookie('key'), 3600 * 24 * 365);
+				} else {
+					var xurl = 'http://' + host + '/kuuE/' + str + '.mkv';
+					check(xurl, title, str, ji);
+				}
+			}
+			function getinfo(hash, type, title) {
+				showsetbox('<span style="float:right;">正在查询"' + title + '"...</span>', 1);
+				var xx = CrossScript('http://' + host + '/mov/' + hash + '/film.xml', '', 'ajax_ds', 'try{ajax_ds?getinfo_run(ajax_ds,\'' + hash + '\'' + (type ? (',\'' + type + '\'') : ('')) + '):alert("获取失败！")}catch(e){alert("获取失败！");showsetbox(\'\', 0)}', 'GB2312|UTF-8', 1)
+			}
+			function getpics(hash){
+			try{
+			return '<a href="javascript:void(0);" onclick="document.getElementById(\'xjs\').onclick();"><div style="overflow: auto;height:100%"><img style="width:100%" onerror="getloadp(document.getElementById(\'stitle\').innerHTML)" src="http://'+host+'/mov/'+hash+'/jzd1.jpg"><br><img style="width:100%" onerror="this.src=\'' + errpic + '\'" src="http://'+host+'/mov/'+hash+'/jzd2.jpg"><br><img style="width:100%" onerror="this.src=\'' + errpic + '\'" src="http://'+host+'/mov/'+hash+'/jzd3.jpg"></div></a>';
+			}catch(e){}
+			}
+			function getinfo_run(xmls, hash, type) {
+				document.getElementById('jianjie').innerHTML = getele(xmls, 'film.brief').replace(/\#\#/ig, '&').replace(/\n/ig, '<br>')+'<span id="fpic"><br><a href="javascript:void(0);" onclick="showsetbox(\'\', 0);document.getElementById(\'player\').innerHTML=getpics(\''+hash+'\')"><img style="width:100%" onerror="this.src=\'' + errpic + '\';document.getElementById(\'fpic\').innerHTML=\'\'" src="http://'+host+'/mov/'+hash+'/jzd1.jpg"><br><img style="width:100%" onerror="this.src=\'' + errpic + '\'" src="http://'+host+'/mov/'+hash+'/jzd2.jpg"><br><img style="width:100%" onerror="this.src=\'' + errpic + '\'" src="http://'+host+'/mov/'+hash+'/jzd3.jpg"></a></span>';
+				document.getElementById('leixing').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;' + (getele(xmls, 'film.channelid'));
+				document.getElementById('riqi').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;' + (getele(xmls, 'film.publishTime'));
+				document.getElementById('diqu').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;' + (getele(xmls, 'film.region'));
+				document.getElementById('fengmian').src = 'http://' + host + '/mov/' + hash + '/2.jpg';
+				showsetbox('', 0);
+				if (type) {
+					try {
+						document.getElementById('ssb').style.width = '60%';
+					} catch(e) {}
+					xj(type);
+				}
+				var lbf = getCookie('lastbf');
+				var lbx = lbf.split('\|');
+				if ((lbx[1] == xhash)&&(document.getElementById("ssb").options.length>2)) {
+					document.getElementById("ssb").selectedIndex = lbx[0];
+					document.getElementById("ssb").onchange();
+				}
+			}
+			function geturl(hash) {
+				xhash = hash;
+				showsetbox('<span style="float:right;">正在获取地址...</span>', 1);
+				var xx = CrossScript('http://' + host + '/mov/' + hash + '/url.xml', '', 'ajax_ds', 'try{ajax_ds?geturl_run(ajax_ds,\'' + hash + '\'):alert("获取失败！")}catch(e){alert("获取失败！");showsetbox(\'\', 0)}', 'GB2312|UTF-8', 1)
+			}
+			function getlbx() {
+				try {
+					return '&nbsp;&nbsp;<span style="font-size:20px">' + document.getElementById('lbx').innerHTML + '</span>';
+				} catch(e) {
+					return '&nbsp;&nbsp;<span style="font-size:20px"><a href="javascript:void(0);" onclick="var m=document.getElementById(\'sst\');m.selectedIndex=1;m.onchange();">播放第一集</a></span>';
+				}
+			}
+			function getloadp(title){
+			loadbox('player', '<a href="javascript:void(0);" onclick="xj(\'' + title + '\')">查看集数</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="loadbox(2)">重新搜索</a>');
+			}
+			function xj(title) {
+				if (title) {
+					document.title = title + ' - School Days';
+				}
+				showsetbox('<span style="overflow: auto;height:30px;width:50%;float:left;margin-left:0;"><a href="javascript:void(0);" onclick="xz(0,0)">' + title + '</a></span><span style="float:right;width:50%;">' + document.getElementById('ssbz').innerHTML + getlbx() + '</span><div style="overflow: auto;height:165px;float:left;margin-left:0;"><div style="height:100%;background:rgba(36, 31, 31, 1);font-size:16px;"><div style="float:left;"><img src="' + document.getElementById('fengmian').src + '"/></div>' + document.getElementById('jianjie').innerHTML + '</div></div><div style="font-size:18px;position:fixed;right:0;top:0;color:white;background:black;"><form style="float:right;" onsubmit="return false;" method="post" >&nbsp;关键词:<input id="sxz" value="' + ((getCookie('key').length > 0) ? (decodeURIComponent(getCookie('key'))) : ('')) + '" width="100px"/><input type="submit" onclick="search(document.getElementById(\'sxz\').value);" value="搜索"/></form></div>', 1);
+				document.getElementById('player').innerHTML=getpics(xhash);
+			}
+			var errpic = mypic;
+			function geturl_run(xmls, hash) {
+				document.getElementById('content').innerHTML = '<div><span id="stitle">' + getele(xmls, 'root.a') + '</span>&nbsp;<span id="path"></span>共<span id="jsx">0</span>集&nbsp;<a id="xjs" href="javascript:void(0);" onclick="xj(\'' + getele(xmls, 'root.a') + '\')">选集</a></div>';
+				document.getElementById('content').innerHTML += '<div style="width:100%;height:'+ document.body.scrollHeight+'px;"><div id="list" style="overflow:auto;float:left;width:10%;height:100%;"><br><b>共<span id="jtm">0</span>集</b><br><span id="ssz" style="width:100px;"><select id="sst" style="width:100%" onchange="if(this.selectedIndex>0){xx(\'' + getele(xmls, 'root.a') + '\',this.value,(this.selectedIndex));}" onblur="this.selectedIndex=0;"></select></span><span id="ssbz" style="display:none;"><select id="ssb" style="width:40%" onchange="if(this.selectedIndex>0){xx(\'' + getele(xmls, 'root.a') + '\',this.value,this.selectedIndex);}"></select></span><br><b>封面</b><br><span style="overflow: auto;width:100%;"><a title="播放第一集" href="javascript:void(0)" onclick="document.getElementById(\'sst\').selectedIndex = 1;document.getElementById(\'sst\').onchange();"><img width="100%" id="fengmian" onerror="this.src=\'' + errpic + '\'"/></a></span><br><b>类型</b><br><span id="leixing" style="font-size:14px;width:100%;"></span><br><b>地区</b><br><span id="diqu" style="font-size:14px;width:100%;"></span><br><b>日期</b><br><span id="riqi" style="font-size:14px;width:100%;"></span><br><b>简介</b><br><span id="jianjie" style="font-size:14px;width:100%;"></span></div><div style="float:right;width:90%;height:100%;" id="player"></div></div>';
+				document.getElementById("sst").options.add(new Option(' ', ''));
+				document.getElementById("ssb").options.add(new Option(' ', ''));
+				document.getElementById('list').style.height = document.body.scrollHeight;
+				var ccx = getele(xmls, 'root.b').split(',');
+				var nn = 0
+				for (var i = 0; i < ccx.length; i++) {
+					if (ccx[i].replace('\n', '').trim().length > 0) {
+						document.getElementById("sst").options.add(new Option('第' + (i + 1) + '集', ccx[i].replace('\n', '').trim()));
+						document.getElementById("ssb").options.add(new Option('第' + (i + 1) + '集', ccx[i].replace('\n', '').trim()));
+						nn++;
+					}
+				}
+				document.getElementById("sst").options[0].text = '共' + nn + '集';
+				document.getElementById("ssb").options[0].text = '共' + nn + '集';
+				document.getElementById("jtm").innerHTML = nn;
+				document.getElementById("jsx").innerHTML = nn;
+				scroll(0, document.documentElement.scrollHeight);
+				/*if (nn > 1) {*/
+					document.getElementById("sst").selectedIndex = 0;
+					getinfo(hash, getele(xmls, 'root.a'), getele(xmls, 'root.a'));
+				/*} else {
+					document.getElementById("sst").selectedIndex = 1;
+					document.getElementById("sst").onchange();
+					getinfo(hash, 0, getele(xmls, 'root.a'));
+				}*/
+			}
+			function gettrueurl(title, hash, ji) {
+				showsetbox('<span style="float:right;">正在获取"' + title + ' 第' + ji + '集"地址...</span>', 1);
+				try {
+					document.getElementById('dzhq').innerHTML = '地址获取中...';
+				} catch(e) {}
+				gettrueurl_run(ajax_list_1, hash.replace('687474703A2F2F', ''), ji, title);
+			}
+			function gettrueurl_run(xmls, hash, ji, title) {
+				var xxx = getele(xmls, 'root.m', 3);
+				for (var i = 0; i < xxx.length; i++) {
+					var xxa, xxb;
+					xxa = getele(xxx[i], 'a', 2);
+					xxb = getele(xxx[i], 'b', 2);
+					var ss = hash;
+					try {
+						if (xxa.length > 0) {
+							if (xxa.length > xxa.replace(ss, '').length) {
+								var trueurl = 'http://' + host + '/kuu' + xxb.replace(':\\kuu', '').replace(/\\/ig, '/');
+								xx(title, hash, ji, trueurl, 1);
+								showsetbox('', 0);
+								return true
+							}
+						}
+					} catch(e) {
+						alert(e)
+					}
+				}
+			}
+			loadbox();
+		</script>
+	</head>
+	<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onbeforecopy="return false">
+		<div style="display:none;" align="center">
+			Your Browser Is Not Support This Application!
+			<br>
+			May Be You Want To Get A Chrome Browser!
+		</div>
+	</body>
+</html>
