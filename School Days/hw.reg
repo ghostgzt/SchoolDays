@@ -1,0 +1,33 @@
+Windows Registry Editor Version 5.00
+
+
+
+[HKEY_CLASSES_ROOT\sdv]
+
+@="School Days Protocol"
+
+"URL Protocol"=""
+
+
+
+[HKEY_CLASSES_ROOT\sdv\DefaultIcon]
+
+@="XXX,1"
+
+
+
+[HKEY_CLASSES_ROOT\sdv\shell]
+
+@=""
+
+
+
+[HKEY_CLASSES_ROOT\sdv\shell\open]
+
+@=""
+
+
+
+[HKEY_CLASSES_ROOT\sdv\shell\open\command]
+
+@="\"XXX\" \"%1\""

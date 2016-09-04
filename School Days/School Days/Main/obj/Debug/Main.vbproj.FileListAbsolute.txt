@@ -1,0 +1,7 @@
+F:\VS_Projects\School Days\School Days\Main\bin\Debug\Main.exe
+F:\VS_Projects\School Days\School Days\Main\bin\Debug\Main.pdb
+F:\VS_Projects\School Days\School Days\Main\obj\Debug\Main.vbprojResolveAssemblyReference.cache
+F:\VS_Projects\School Days\School Days\Main\obj\Debug\Main.exe
+F:\VS_Projects\School Days\School Days\Main\obj\Debug\Main.pdb
+F:\VS_Projects\School Days\School Days\Main\obj\Debug\Main.MainForm.resources
+F:\VS_Projects\School Days\School Days\Main\obj\Debug\Main.vbproj.GenerateResource.Cache
